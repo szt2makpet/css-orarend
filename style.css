@@ -1,0 +1,82 @@
+:root {
+    --background-light: #f0f0f0;
+    --text-light: #333;
+    --background-dark: #333;
+    --text-dark: #fff;
+}
+
+/* Alapértelmezett stílus (világos mód) */
+body {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+/* Sötét mód */
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+.container {
+    background-image: url("https://cdn.pixabay.com/photo/2020/01/22/09/39/teacher-4784916_1280.jpg");
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.text {
+    text-align: center;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    flex: 1;
+    max-width: 200px;
+}
+
+.day-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.class-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+/* Stílus a sötét módban */
+.dark-mode .class-box {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+.class {
+    margin: 5px 0;
+}
+
+.text{
+    margin-left:35%;
+    margin-right:35%;
+}
+
+.arrow-right {
+width: 0; 
+height: 0; 
+border-top: 30px solid transparent;
+border-bottom: 30px solid transparent;
+border-left: 30px solid rgb(255, 255, 255);
+margin-left: 100%;
+}

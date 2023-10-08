@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS - Órarend</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="style.css" class="rel">
+    <title>Órarend</title>
 </head>
-<body>
-    
+<body class="light-mode">
+    <button onclick="toggleDarkMode()">Váltás sötét/világos mód között</button>
+    <div class="text" style="background-color: #fff;">
+    <h1 class="orarenddark">Órarend</h1><h1 class="arrow-right"></h1>
+    </div>
+    <div class="container">
+        <div class="day">
+            <div class="day-name class-box">Hétfő</div>
+            <div class="class-box">
+                <div class="class">1. óra: Matematika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">2. óra: Fizika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">3. óra: Történelem</div>
+            </div>
+            <div class="class-box">
+                <div class="class">4. óra: Testnevelés</div>
+            </div>
+        </div>
+
+        <div class="day">
+            <div class="day-name class-box">Kedd</div>
+            <div class="class-box">
+                <div class="class">1. óra: Matematika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">2. óra: Fizika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">3. óra: Történelem</div>
+            </div>
+        </div>
+
+        <div class="day">
+            <div class="day-name class-box">Szerda</div>
+            <div class="class-box">
+                <div class="class">1. óra: Matematika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">2. óra: Fizika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">3. óra: Történelem</div>
+            </div>
+        </div>
+
+        <div class="day">
+            <div class="day-name class-box">Csütörtök</div>
+            <div class="class-box">
+                <div class="class">1. óra: Matematika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">2. óra: Fizika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">3. óra: Történelem</div>
+            </div>
+        </div>
+
+        <div class="day">
+            <div class="day-name class-box">Péntek</div>
+            <div class="class-box">
+                <div class="class">1. óra: Matematika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">2. óra: Fizika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">3. óra: Történelem</div>
+            </div>
+        </div>
+
+        <div class="day">
+            <div class="day-name class-box">Szombat</div>
+            <div class="class-box">
+                <div class="class">1. óra: Matematika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">2. óra: Fizika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">3. óra: Történelem</div>
+            </div>
+        </div>
+
+        <div class="day">
+            <div class="day-name class-box">Vasárnap</div>
+            <div class="class-box">
+                <div class="class">1. óra: Matematika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">2. óra: Fizika</div>
+            </div>
+            <div class="class-box">
+                <div class="class">3. óra: Történelem</div>
+            </div>
+        </div>
+    </div>
 </body>
+
+
 </html>
