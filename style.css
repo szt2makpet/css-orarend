@@ -17,6 +17,16 @@ body.dark-mode {
     color: var(--text-dark);
 }
 
+h1 {
+    
+    color: var(--text-light);
+}
+
+h1.dark-mode {
+   
+    color: var(--text-dark);
+}
+
 .container {
     background-image: url("https://cdn.pixabay.com/photo/2020/01/22/09/39/teacher-4784916_1280.jpg");
     display: flex;
