@@ -1,13 +1,21 @@
 function toggleDarkMode() {
-    const currentMode = localStorage.getItem('mode')
     const body = document.querySelector('body');
-    body.classList.toggle('dark-mode');
-    body.classList.toggle('light-mode');
-   if (body.classList.contains('light-mode')) {
-    localStorage.setItem('mode', 'light')
-   }else{
-    body.classList.add('dark-mode');
-    localStorage.setItem('mode', 'dark-mode');
-   }
+    const isLightMode = body.classList.contains('light-mode');
+
+    if (isLightMode) {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        localStorage.setItem('mode', 'dark');
+    } else {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        localStorage.setItem('mode', 'light');
+    }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const storedMode = localStorage.getItem('mode');
+    if (storedMode === 'dark') {
+        document.querySelector('body').classList.add('dark-mode');
+    }
+});
